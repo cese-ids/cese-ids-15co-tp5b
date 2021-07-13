@@ -31,6 +31,12 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .documento = "23.517.968",
 };
 
+static const struct alumno_s ALEJANDRO_PERMINGEAT = {
+    .apellidos = "PERMINGEAT",
+    .nombres = "Alejandro",
+    .documento = "99.999.999",
+};
+
 static const struct alumno_s CARLOS_MAFFRAND = {
     .apellidos = "MAFFRAND",
     .nombres = "Carlos",
@@ -38,7 +44,8 @@ static const struct alumno_s CARLOS_MAFFRAND = {
 };
 
 const alumno_t ALUMNOS[] = {
-    &ESTEBAN_VOLENTINI, 
+    &ESTEBAN_VOLENTINI,
+    &ALEJANDRO_PERMINGEAT,
     &CARLOS_MAFFRAND,
 };
 
