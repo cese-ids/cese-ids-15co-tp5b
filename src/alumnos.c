@@ -33,7 +33,7 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
 
 static const struct alumno_s CARLOS_MAFFRAND = {
     .apellidos = "MAFFRAND",
-    .nombres = "CARLOS",
+    .nombres = "Carlos",
     .documento = "30.840.267",
 };
 
