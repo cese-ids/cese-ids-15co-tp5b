@@ -10,7 +10,6 @@
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
-
 #include <stdio.h>
 #include <string.h>
 
