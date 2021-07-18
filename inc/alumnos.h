@@ -59,8 +59,8 @@ bool SerializarAlumno(
     );
 
 /**
- * @brief 
- * 
+ * @brief Serializar los datos de un alumno en formato JSON
+ *  
  * @param cadena Cadena de caracteres para serializar los datos
  * @param espacio Tamano de la cadena de caracteres de resultado
  * @return true La serializacion de los datos se realizo correctamente
