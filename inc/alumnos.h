@@ -31,9 +31,9 @@ extern "C" {
 
 //! Estructura de datos con la informacion de un alumno
 typedef struct alumno_s {
-    char apellidos[30];         //!< Apellido del alumno
-    char nombres[30];           //!< Nombre del alumno
-    char documento[11];         //!< Numero del documento
+    char apellidos[30];     //!< Apellido del alumno
+    char nombres[30];       //!< Nombre del alumno
+    char documento[11];     //!< Numero del documento
 } const * alumno_t;
 
 /*=====[Definitions of public global variables]==============================*/
@@ -41,20 +41,20 @@ typedef struct alumno_s {
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
 /**
- * @brief Serializar los datos de un alumno en formato JSON
+ * @brief   Serializar los datos de un alumno en formato JSON
  * 
  * Esta funcion recibe un puntero a una estructura con los datos de un 
  * alumno y devuelve los datos de esa estructura en una cadena JSON
  * 
- * @param[out]  cadena      Cadena de caracteres para serializar los datos
- * @param[in]   espacio     Tamano de la cadena de caracteres de resultado
- * @param[in]   alumno      Estructura con los datos del alumno a serializar
- * @return      true        La serializacion de los datos se realizo correctamente
- * @return      false       No se pudo serializar los datos del alumno
+ * @param[out] cadena   Cadena de caracteres para serializar los datos
+ * @param[in] espacio   Tamano de la cadena de caracteres de resultado
+ * @param[in] alumno    Estructura con los datos del alumno a serializar
+ * @return  true La serializacion de los datos se realizo correctamente
+ * @return  false No se pudo serializar los datos del alumno
  */
 bool SerializarAlumno(
-    char * cadena,          //!< Cadena de caracteres para serializar los datos
-    size_t espacio,         //!< Cadena de caracteres para serializar los datos
+    char * cadena,  //!< Cadena de caracteres para serializar los datos
+    size_t espacio, //!< Cadena de caracteres para serializar los datos
     const alumno_t alumno   //!< Cadena de caracteres para serializar los datos
     );
 
