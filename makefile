@@ -29,3 +29,9 @@ $(BIN_DIR): $(OUT_DIR)
 $(OBJ_DIR): $(OUT_DIR)
 	@echo Creating output objects folder
 	@mkdir $(OBJ_DIR)
+
+###############################################################################
+# Crear archivos Doxygen
+doc:
+	@echo Creando documentacion con Doxygen
+	@doxygen Doxyfile -s
