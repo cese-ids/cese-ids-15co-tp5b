@@ -10,7 +10,6 @@
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
-
 #include <stdio.h>
 #include <string.h>
 
@@ -31,13 +30,23 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
+
+static const struct alumno_s ALEJANDRO_PERMINGEAT = {
+    .apellidos = "PERMINGEAT",
+    .nombres = "Alejandro",
+    .documento = "99.999.999",
+};
+
 static const struct alumno_s JONATHAN_CAGUA = {
     .apellidos = "CAGUA",
     .nombres = "Jonathan",
     .documento = "23.517.967",
 };
+
 const alumno_t ALUMNOS[] = {
-    &ESTEBAN_VOLENTINI,&JONATHAN_CAGUA,
+    &ESTEBAN_VOLENTINI,
+    &ALEJANDRO_PERMINGEAT,
+    &JONATHAN_CAGUA,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
